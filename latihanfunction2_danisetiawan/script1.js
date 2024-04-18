@@ -1,5 +1,5 @@
 //punya dany
-function vol_kubus (a){
+/*function vol_kubus (a){
     return (a*3);
 }
 function vol_balok(a1,a2,a3){
@@ -68,4 +68,4 @@ do{
     
     console.log("-- PROGRAM SELESAI --")
     
-    
+    */
