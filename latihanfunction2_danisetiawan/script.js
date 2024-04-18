@@ -1,3 +1,4 @@
+//punya dany
 function vol_kubus (a){
     return (a*3);
 }
