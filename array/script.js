@@ -79,3 +79,79 @@ function penjumlahan(a,b){
 
 const total = penjumlahan(9,5) + penjumlahan(8,5);
 console.log(total);
+
+
+const arr = [3,5,7,9,11]
+
+// lenght = menampilkan jumlah isi dari array
+console.log(arr.length)
+
+// join = menampilakn isi array menjadi sebuah sting
+const word = ['K', 'A', 'T', 'A']
+const word2 = ["selamat", "datang", "di", "BLK"]
+console.log(word.join(""))
+console.log(word2.join(""))
+
+// push = menambahkan elemen array di bagian terakhir
+arr.push(13, 15, 17)
+word.push("B", "E", "R", "A", "C", "U", "N")
+word2.push("karawang")
+
+console.log(arr)
+console.log(word.join(" " + "\n" + word2.join(" ")));
+
+// pop = menghapus elem terakhir array
+arr.pop()
+console.log(arr)
+
+// unshift = menambahkan elemen pada di awal array
+//[1,3,5,9,11,13,15]
+arr.unshift(1)
+console.log(arr)
+
+//shift = menghapus elemen pertama di array
+word.shift()
+console.log(word.join(""))
+
+//slite(idxawal, idakhir)
+const siswa = ["Maulana", "naufal", "Faisal", "Topik", "Rian"]
+
+//slice = akan menghasilakn array baru
+const siswa2 = siswa.slice(2, 4);
+console.log(siswa2);
+
+//splice = menyisipkan elemen di index tertentu
+// splice(idwawal, mau dihapus berapa elemen1, elemen2,...)
+  siswa.splice(2,0, "yudha", "jabbar", "dani")
+console.log(siswa);
+
+//foreach = sama kaya perulangan "for"
+const nilai= [70, 75, 82, 65, 58];
+
+nilai.forEach(function (e, i){
+    console.log("index ke-" + i + " = " + e);
+})
+
+// sort mengurutkan array dari kecil sampai terbesar
+console.log(nilai.sort())
+
+//map untuk memetakan
+const dikalidua= nilai.map(function (e){ 
+return e * 2
+})
+
+console.log(dikalidua)
+
+// filter & find
+const bilanganbulat = [2, 3, 4, 7, 6, 9, 11, 8];
+
+const bilbul = bilanganbulat.filter(function(e){
+    return e< 5
+});
+
+const bilbul2 = bilanganbulat.filter(function(e){
+    return e< 5
+});
+
+console.log(bilbul);
+console.log(bilbul2);
